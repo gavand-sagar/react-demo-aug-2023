@@ -1,3 +1,4 @@
+import { Button, TextField } from '@mui/material';
 import React from 'react'
 import { useForm } from 'react-hook-form';
 
@@ -10,24 +11,22 @@ export default function Login() {
     return (
         <div>
             <form onSubmit={handleSubmit(submit)}>
+                <br />
+                <br />
                 <div>
-                    <input {...register('username', { required: "Username is Required" })} />
+                    <TextField error={errors?.username} helperText={errors?.username?.message} label="Username" variant="outlined" {...register('username', { required: "Username is Required" })} />
+                    
                 </div>
-                <div className='error-message'>
-                    {
-                        errors?.username?.message
-                    }
-                </div>
+                <br />
+                <br />
                 <div>
-                    <input {...register('password', { required: "Password is Required" })} />
+                    <TextField error={errors?.password} helperText={errors?.password?.message} label="Password" variant="outlined" {...register('password', { required: "Password is Required" })} />
+                   
                 </div>
-                <div className='error-message'>
-                    {
-                        errors?.password?.message
-                    }
-                </div>
+                <br />
+                <br />
                 <div>
-                    <button type='submit'>LOGIN</button>
+                    <Button type='submit' varient="contained">LOGIN</Button>
                 </div>
             </form>
         </div>
