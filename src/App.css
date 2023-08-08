@@ -32,17 +32,38 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 
-.primary-button{
+.primary-button {
   background-color: black;
   color: white;
   padding: 8px;
   border: none;
   margin-right: 3px;
   border-radius: 5px;
+}
+
+.expand-collapse-container {
+  border: 1px solid gray;
+  margin: 10px;
+}
+
+.my-para {
+  color: blue;
+}
+
+.my-heading {
+  background-color: lightgray;  
+}
+
+
+.my-heading:hover {
+  background-color: gray;
+  color: white;
+  transition: 1s;
 }

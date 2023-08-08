@@ -5,6 +5,8 @@ import Panel from './Panel';
 import PrimaryButton from './PrimaryButton';
 import Product from './Product';
 import Rating from './Rating';
+import Counter from './Counter';
+import ExpandCollapse from './ExpandCollapse';
 
 function App() {
 
@@ -21,9 +23,23 @@ function App() {
 
   return (
     <div className="App">
-      {
+
+      <ExpandCollapse type={'red'} heading={"Sagar"} para={"I am amazing!!!!!"} />
+
+
+      <ExpandCollapse type={'pink'} heading={"Mango"} para={"Its sooo gooood!!!!"} />
+
+      <ExpandCollapse type={'brown'} heading={"Mango"} para={"Its sooo gooood!!!!"} />
+
+
+      {/* <Counter limit={5}/>
+      <Counter limit={10}/>
+      <Counter limit={3}/> */}
+
+
+      {/* {
         products.map(item => <Product brand={item.brand} price={item.price} rating={item.rating} />)
-      }
+      } */}
 
 
       {/* <Rating value={0}></Rating>
