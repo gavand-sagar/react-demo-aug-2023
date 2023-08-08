@@ -7,6 +7,8 @@ import Product from './Product';
 import Rating from './Rating';
 import Counter from './Counter';
 import ExpandCollapse from './ExpandCollapse';
+import MyForm from './MyForm';
+import Login from './Login';
 
 function App() {
 
@@ -21,15 +23,68 @@ function App() {
   }]
 
 
+
   return (
     <div className="App">
 
-      <ExpandCollapse type={'red'} heading={"Sagar"} para={"I am amazing!!!!!"} />
+
+
+      <Login/>
+
+
+
+
+      {/* <MyForm/> */}
+
+
+
+
+
+      {/* <input type='text' maxLength={10} />
+      <hr />
+      <input type='password' />
+      <hr />
+      <input type='number' min={0} max={5} />
+      <hr />
+      <input type='date' min={'2023-07-01'} />
+      <hr />
+      <input type='color' />
+      <hr />
+      <input type='range' min={0} step={25} max={100} />
+      <hr />
+      <input type='checkbox' name='t2' />
+      <input type='checkbox' name='t2' />
+      <input type='checkbox' name='t2' />
+      <hr />
+      <input type='radio' name='t1' />
+      <input type='radio' name='t1' />
+      <input type='radio' name='t1' />
+      <hr />
+
+      <textarea></textarea>
+      
+      <select>
+          <option>Mumbai</option>
+          <option>Delhi</option>
+      </select>
+
+
+      <select>
+          <option>Mango</option>
+          <option>Banana</option>
+          <option>Kiwi</option>
+      </select> */}
+
+      
+
+
+
+      {/* <ExpandCollapse type={'red'} heading={"Sagar"} para={"I am amazing!!!!!"} />
 
 
       <ExpandCollapse type={'pink'} heading={"Mango"} para={"Its sooo gooood!!!!"} />
 
-      <ExpandCollapse type={'brown'} heading={"Mango"} para={"Its sooo gooood!!!!"} />
+      <ExpandCollapse type={'brown'} heading={"Mango"} para={"Its sooo gooood!!!!"} /> */}
 
 
       {/* <Counter limit={5}/>

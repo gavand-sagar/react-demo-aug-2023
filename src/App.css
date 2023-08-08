@@ -67,3 +67,7 @@
   color: white;
   transition: 1s;
 }
+
+.error-message{
+  color: red;
+}
