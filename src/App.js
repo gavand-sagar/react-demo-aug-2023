@@ -13,6 +13,7 @@ import { useState } from 'react';
 import Border from './Border';
 import ToggleChild from './ToggleChild';
 import Dialog from './Dialog';
+import LifeCycle from './LifeCycle';
 
 function App() {
 
@@ -36,12 +37,19 @@ function App() {
   return (
     <div className="App">
 
+
+      <ToggleChild>
+        <LifeCycle></LifeCycle>
+      </ToggleChild>
+
+
+
       {/* <Dialog>
           <h1>heyyy</h1>
           <p>lorem20asdfjkja ksfjkdsjfkjskdfjksdjff ks fkjdskfj kdfk </p>
       </Dialog> */}
 
-
+{/* 
 
       <Dialog>
           <button>click me</button>
@@ -65,7 +73,7 @@ function App() {
 
       <ToggleChild>
           <PrimaryButton label={'HEYYY'}></PrimaryButton>
-      </ToggleChild>
+      </ToggleChild> */}
     
 
 
