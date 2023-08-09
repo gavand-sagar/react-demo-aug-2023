@@ -10,6 +10,9 @@ import ExpandCollapse from './ExpandCollapse';
 import MyForm from './MyForm';
 import Login from './Login';
 import { useState } from 'react';
+import Border from './Border';
+import ToggleChild from './ToggleChild';
+import Dialog from './Dialog';
 
 function App() {
 
@@ -23,22 +26,72 @@ function App() {
     rating: 4
   }]
 
-  const[value,setValue] = useState(0)
+  const [value, setValue] = useState(0)
 
 
-  function click2(){
+  function click2() {
     alert("CLICKED 2")
   }
 
   return (
     <div className="App">
 
+      {/* <Dialog>
+          <h1>heyyy</h1>
+          <p>lorem20asdfjkja ksfjkdsjfkjskdfjksdjff ks fkjdskfj kdfk </p>
+      </Dialog> */}
+
+
+
+      <Dialog>
+          <button>click me</button>
+      </Dialog>
+
+      <Border>
+        <span>heyyyee</span>
+      </Border>
+
+      <Border>
+        <h1>huuuuuu</h1>
+      </Border>
+      
+      <Border>
+        <PrimaryButton label={'hello'}></PrimaryButton>
+      </Border>
+
+      <ToggleChild>
+          <h1>Hii</h1>
+      </ToggleChild>
+
+      <ToggleChild>
+          <PrimaryButton label={'HEYYY'}></PrimaryButton>
+      </ToggleChild>
+    
+
+
+
+
+      {/* <ExpandCollapse type={'pink'} heading={<h1>Whatever</h1>} para={"Its sooo gooood!!!!"} />
+      <ExpandCollapse type={'pink'} heading={
+                <PrimaryButton label={<h3>HIIII</h3>} />
+      } para={"Its sooo gooood!!!!"} /> */}
+
+
+
+      {/* <PrimaryButton  label={<Counter limit={80}/>}/> 
+      <PrimaryButton  label={<h3>HIIII</h3>}/>
+      <PrimaryButton  label={<div>
+                                <div>Line 1</div>
+                                <div> Line 2</div>
+                              </div>}/>
+      <PrimaryButton  label={"Line 1 Line 2"}/> */}
+
 
       {/* <PrimaryButton onClick={click2}  label={'Click me'}/>
       <hr/>
       <button onClick={click2}>Click Me</button> */}
 
-    
+
       {/* <h1>Value in counter:( {value} )</h1>
       <Counter onChange={setValue} limit={5}/> */}
 
@@ -85,7 +138,7 @@ function App() {
           <option>Kiwi</option>
       </select> */}
 
-      
+
 
 
 

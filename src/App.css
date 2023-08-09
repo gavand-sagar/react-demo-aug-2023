@@ -71,3 +71,22 @@
 .error-message{
   color: red;
 }
+
+.dialog{
+  background-color: rgba(87, 55, 55, 0.512);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  height: 200px;
+  width: 300px;
+  background-color: white;
+}

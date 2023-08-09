@@ -23,14 +23,18 @@ export default function Counter({ limit, onChange }) {
     function increment() {
         if (value < limit) {
             setValue(value + 1)
-            onChange(value + 1)
+            if(onChange){
+                onChange(value + 1)
+            }
         }
     }
 
     function decrement() {
         if (value > 0) {
             setValue(value - 1)
-            onChange(value - 1)
+            if(onChange){
+                onChange(value - 1)
+            }
         }
     }
 
