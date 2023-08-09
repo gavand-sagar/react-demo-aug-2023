@@ -9,6 +9,7 @@ import Counter from './Counter';
 import ExpandCollapse from './ExpandCollapse';
 import MyForm from './MyForm';
 import Login from './Login';
+import { useState } from 'react';
 
 function App() {
 
@@ -22,15 +23,24 @@ function App() {
     rating: 4
   }]
 
+  const[value,setValue] = useState(0)
 
+
+  function click2(){
+    alert("CLICKED 2")
+  }
 
   return (
     <div className="App">
 
 
+      {/* <PrimaryButton onClick={click2}  label={'Click me'}/>
+      <hr/>
+      <button onClick={click2}>Click Me</button> */}
 
-      <Login/>
-
+    
+      {/* <h1>Value in counter:( {value} )</h1>
+      <Counter onChange={setValue} limit={5}/> */}
 
 
 

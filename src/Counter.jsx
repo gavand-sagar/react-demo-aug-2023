@@ -15,7 +15,7 @@ import React, { useState } from 'react'
 // }
 
 
-export default function Counter({limit}) {
+export default function Counter({ limit, onChange }) {
 
     //  let value = 0;
     let [value, setValue] = useState(0);
@@ -23,12 +23,14 @@ export default function Counter({limit}) {
     function increment() {
         if (value < limit) {
             setValue(value + 1)
+            onChange(value + 1)
         }
     }
 
-    function decrement(){
+    function decrement() {
         if (value > 0) {
             setValue(value - 1)
+            onChange(value - 1)
         }
     }
 

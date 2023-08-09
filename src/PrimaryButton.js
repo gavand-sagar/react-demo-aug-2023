@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default function PrimaryButton({ label }) {
+export default function PrimaryButton({ label, ...restOfAll }) {
     return (
-        <button className="primary-button">
+        <button 
+        {...restOfAll}
+        className="primary-button">
             {label}
         </button>
     )
