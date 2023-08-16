@@ -6,7 +6,7 @@ export default function Header() {
         <div>
             <Link to={'/signup'}>Sign Page</Link>
             <Link to={'/login'}>Login Page</Link>
-            <Link to={'/orders'}>Order Page</Link>
+            <Link to={'/orders/default'}>Order Page</Link>
             <br />
             <br />
             <br />
