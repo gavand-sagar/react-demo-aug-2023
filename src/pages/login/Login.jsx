@@ -3,12 +3,15 @@ import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import MyDataContext from '../../data/my-data-context';
+import { useSelector } from 'react-redux';
 
 
 export default function Login() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const navigate = useNavigate();
     const { setUsername } = useContext(MyDataContext);
+
+    const { value } = useSelector(state => state.counter)
 
     function submit(data) {
         //api call is ideal
@@ -23,6 +26,7 @@ export default function Login() {
 
     return (
         <div>
+            Value: { value }
             <form onSubmit={handleSubmit(submit)}>
                 <br />
                 <br />
