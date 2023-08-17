@@ -21,6 +21,8 @@ import Dashboard from './pages/dashboard/Dashboard';
 import NotFound from './pages/not-found/NotFound';
 import Header from './shared/components/Header';
 import GlobalHoc from './data/GlobalHoc';
+import AddProduct from './pages/add-product/AddProduct';
+import Checkout from './pages/checkout/Checkout';
 
 function App() {
 
@@ -33,6 +35,8 @@ function App() {
             <Route path='/login' element={<Login />}></Route>
             <Route path='/orders/:query' element={<Order />}></Route>
             <Route path='/signup' element={<Signup />}></Route>
+            <Route path='/add-product' element={<AddProduct />}></Route>
+            <Route path='/checkout' element={<Checkout />}></Route>
             <Route path='/' element={<Dashboard />}></Route>
             <Route path='*' element={<NotFound />}></Route>
           </Routes>

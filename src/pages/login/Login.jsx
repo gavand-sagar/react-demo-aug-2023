@@ -1,24 +1,26 @@
 import { Button, TextField } from '@mui/material';
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import MyDataContext from '../../data/my-data-context';
 
 
 export default function Login() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const navigate = useNavigate();
+    const { setUsername } = useContext(MyDataContext);
 
     function submit(data) {
         //api call is ideal
-        if (data.username == "Admin" && data.password == "123")
-        {
-            navigate('/orders')
+        if (data.username == "Admin" && data.password == "123") {
+            setUsername(data.username)
+            navigate('/orders/something')
         }
         else {
             alert("Invalid credentials")
         }
     }
-    
+
     return (
         <div>
             <form onSubmit={handleSubmit(submit)}>

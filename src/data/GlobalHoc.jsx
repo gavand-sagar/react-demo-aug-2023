@@ -3,7 +3,7 @@ import MyDataContext from './my-data-context';
 
 export default function GlobalHoc({ children }) {
 
-    let [username, setUsername] = useState("Sagar");
+    let [username, setUsername] = useState("");
     let [avatar, setAvatar] = useState("");
     let [email, setEmail] = useState("");
     let [myOrderCout, setMyOrderCount] = useState(0);
