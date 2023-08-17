@@ -27,19 +27,19 @@ export default function Login() {
                 <br />
                 <br />
                 <div>
-                    <TextField error={errors?.username} helperText={errors?.username?.message} label="Username" variant="outlined" {...register('username', { required: "Username is Required" })} />
+                    <TextField data-testid='username-txt' error={errors?.username} helperText={errors?.username?.message} label="Username" variant="outlined" {...register('username', { required: "Username is Required" })} />
 
                 </div>
                 <br />
                 <br />
                 <div>
-                    <TextField error={errors?.password} helperText={errors?.password?.message} label="Password" variant="outlined" {...register('password', { required: "Password is Required" })} />
+                    <TextField data-testid='password-txt' error={errors?.password} helperText={errors?.password?.message} label="Password" variant="outlined" {...register('password', { required: "Password is Required" })} />
 
                 </div>
                 <br />
                 <br />
                 <div>
-                    <Button type='submit' varient="contained">LOGIN</Button>
+                    <Button data-testid='login-button' type='submit' varient="contained">LOGIN</Button>
                 </div>
             </form>
         </div>

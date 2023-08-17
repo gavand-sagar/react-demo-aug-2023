@@ -16,7 +16,7 @@ export default function Order() {
  
   return (
     <div>
-      <h1>Order</h1>
+      <h1 data-testid='order-heading'>Order</h1>
       {username}
       <Content />
       <hr />

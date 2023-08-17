@@ -1,4 +1,4 @@
-import axios from 'axios'
+// import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import SongItem from './SongItem'
 import { Skeleton } from '@mui/material'
@@ -37,16 +37,16 @@ export default function LifeCycle() {
     // }
 
     function onLoad() {
-        axios.get('http://localhost:3001/songs')
-            .then(response => {
-                setArray(response.data)
-            })
+        // axios.get('http://localhost:3001/songs')
+        //     .then(response => {
+        //         setArray(response.data)
+        //     })
 
 
-        axios.get('https://catfact.ninja/fact')
-            .then(response => {
-                setSomeValue(response.data.fact)
-            })
+        // axios.get('https://catfact.ninja/fact')
+        //     .then(response => {
+        //         setSomeValue(response.data.fact)
+        //     })
 
     }
 

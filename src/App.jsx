@@ -37,7 +37,7 @@ function App() {
             <Route path='/signup' element={<Signup />}></Route>
             <Route path='/add-product' element={<AddProduct />}></Route>
             <Route path='/checkout' element={<Checkout />}></Route>
-            <Route path='/' element={<Dashboard />}></Route>
+            <Route path='/' element={<Login />}></Route>
             <Route path='*' element={<NotFound />}></Route>
           </Routes>
         </fieldset>
